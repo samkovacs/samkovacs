@@ -4,7 +4,7 @@
     <g id="pacman">
       <circle cx="0" cy="0" r="10" fill="gold" />
       <path d="M0,0 L10,-6 A10,10 0 1,1 10,6 Z" fill="#073642">
-        <animateTransform attributeName="transform" type="rotate" values="0;45;0" dur="0.4s" repeatCount="indefinite" />
+        <animateTransform attributeName="transform" type="rotate" values="0;45;0" dur="0.5s" repeatCount="indefinite" />
       </path>
     </g>
 
@@ -20,56 +20,34 @@
 
   <!-- Draw stationary pellets along the border -->
   <g id="pellets">
-    <use href="#pellet">
-      <animateMotion dur="10s" repeatCount="indefinite">
-        <mpath href="#borderPath" />
-      </animateMotion>
-    </use>
-    <use href="#pellet" transform="translate(100, 0)">
-      <animateMotion dur="10s" begin="0s" repeatCount="indefinite">
-        <mpath href="#borderPath" />
-      </animateMotion>
-    </use>
-    <use href="#pellet" transform="translate(200, 0)">
-      <animateMotion dur="10s" begin="0s" repeatCount="indefinite">
-        <mpath href="#borderPath" />
-      </animateMotion>
-    </use>
-    <use href="#pellet" transform="translate(300, 0)">
-      <animateMotion dur="10s" begin="0s" repeatCount="indefinite">
-        <mpath href="#borderPath" />
-      </animateMotion>
-    </use>
-    <use href="#pellet" transform="translate(400, 0)">
-      <animateMotion dur="10s" begin="0s" repeatCount="indefinite">
-        <mpath href="#borderPath" />
-      </animateMotion>
-    </use>
-    <use href="#pellet" transform="translate(500, 0)">
-      <animateMotion dur="10s" begin="0s" repeatCount="indefinite">
-        <mpath href="#borderPath" />
-      </animateMotion>
-    </use>
-    <use href="#pellet" transform="translate(600, 0)">
-      <animateMotion dur="10s" begin="0s" repeatCount="indefinite">
-        <mpath href="#borderPath" />
-      </animateMotion>
-    </use>
-    <use href="#pellet" transform="translate(700, 0)">
-      <animateMotion dur="10s" begin="0s" repeatCount="indefinite">
-        <mpath href="#borderPath" />
-      </animateMotion>
-    </use>
-    <use href="#pellet" transform="translate(800, 0)">
-      <animateMotion dur="10s" begin="0s" repeatCount="indefinite">
-        <mpath href="#borderPath" />
-      </animateMotion>
-    </use>
-    <use href="#pellet" transform="translate(900, 0)">
-      <animateMotion dur="10s" begin="0s" repeatCount="indefinite">
-        <mpath href="#borderPath" />
-      </animateMotion>
-    </use>
+    <use href="#pellet" x="40" y="20" />
+    <use href="#pellet" x="120" y="20" />
+    <use href="#pellet" x="200" y="20" />
+    <use href="#pellet" x="280" y="20" />
+    <use href="#pellet" x="360" y="20" />
+    <use href="#pellet" x="440" y="20" />
+    <use href="#pellet" x="520" y="20" />
+    <use href="#pellet" x="600" y="20" />
+    <use href="#pellet" x="680" y="20" />
+    <use href="#pellet" x="760" y="20" />
+    <use href="#pellet" x="840" y="20" />
+    <use href="#pellet" x="920" y="20" />
+    <use href="#pellet" x="960" y="40" />
+    <use href="#pellet" x="960" y="120" />
+    <use href="#pellet" x="960" y="160" />
+    <use href="#pellet" x="880" y="180" />
+    <use href="#pellet" x="800" y="180" />
+    <use href="#pellet" x="720" y="180" />
+    <use href="#pellet" x="640" y="180" />
+    <use href="#pellet" x="560" y="180" />
+    <use href="#pellet" x="480" y="180" />
+    <use href="#pellet" x="400" y="180" />
+    <use href="#pellet" x="320" y="180" />
+    <use href="#pellet" x="240" y="180" />
+    <use href="#pellet" x="160" y="180" />
+    <use href="#pellet" x="80" y="180" />
+    <use href="#pellet" x="20" y="160" />
+    <use href="#pellet" x="20" y="80" />
   </g>
 
   <!-- Pac-Man moving along the border -->
