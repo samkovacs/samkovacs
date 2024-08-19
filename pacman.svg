@@ -1,7 +1,7 @@
 <svg width="1000" height="200" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <!-- Pac-Man shape corrected to face the right direction -->
-    <path id="pacman" d="M-20,-20 A20,20 0 1,1 -20,20 L0,0 Z" fill="yellow" />
+    <!-- Pac-Man shape with mouth facing right -->
+    <path id="pacman" d="M20,-10 A20,20 0 1,1 20,10 L0,0 Z" fill="yellow" />
 
     <!-- Define the path along the border -->
     <path id="borderPath" d="M20,20 H980 V180 H20 Z" fill="none" stroke="none" />
