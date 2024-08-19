@@ -12,8 +12,8 @@
   <!-- Rectangle with animated gradient border and solarized background -->
   <rect x="5" y="5" width="990" height="190" fill="#073642" stroke="url(#animatedGradient)" stroke-width="8" rx="15" ry="15" />
 
-  <!-- Scalable Text content with dynamic fitting -->
-  <text x="50%" y="50%" text-anchor="middle" fill="#eee8d5" font-family="Verdana, Geneva, sans-serif" dy=".35em" textLength="950" lengthAdjust="spacingAndGlyphs">
+  <!-- Scalable Text content with vertical and horizontal fit -->
+  <text x="50%" y="50%" text-anchor="middle" fill="#eee8d5" font-family="Verdana, Geneva, sans-serif" font-size="10em" dy=".35em" textLength="950" lengthAdjust="spacingAndGlyphs">
     Sam Kovacs
   </text>
 
@@ -26,7 +26,7 @@
     </feMerge>
   </filter>
 
-  <text x="50%" y="50%" text-anchor="middle" fill="#eee8d5" font-family="Verdana, Geneva, sans-serif" dy=".35em" textLength="950" lengthAdjust="spacingAndGlyphs" filter="url(#glow)">
+  <text x="50%" y="50%" text-anchor="middle" fill="#eee8d5" font-family="Verdana, Geneva, sans-serif" font-size="10em" dy=".35em" textLength="950" lengthAdjust="spacingAndGlyphs" filter="url(#glow)">
     Sam Kovacs
   </text>
 </svg>
