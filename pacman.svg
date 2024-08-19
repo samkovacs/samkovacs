@@ -8,8 +8,8 @@
       </path>
     </g>
 
-    <!-- Define a pellet (dot) -->
-    <circle id="pellet" r="5" fill="white" />
+    <!-- Define a pellet (dot), now 10% smaller -->
+    <circle id="pellet" r="4.5" fill="white" />
 
     <!-- Define the path along the border -->
     <path id="borderPath" d="M20,20 H960 V180 H40 Z" fill="none" stroke="none" />
@@ -18,36 +18,46 @@
   <!-- Background rectangle -->
   <rect x="5" y="5" width="990" height="190" fill="#073642" stroke="none" rx="15" ry="15" />
 
-  <!-- Draw stationary pellets along the border -->
+  <!-- Evenly spaced pellets along the entire border -->
   <g id="pellets">
     <use href="#pellet" x="40" y="20" />
-    <use href="#pellet" x="120" y="20" />
-    <use href="#pellet" x="200" y="20" />
+    <use href="#pellet" x="100" y="20" />
+    <use href="#pellet" x="160" y="20" />
+    <use href="#pellet" x="220" y="20" />
     <use href="#pellet" x="280" y="20" />
-    <use href="#pellet" x="360" y="20" />
-    <use href="#pellet" x="440" y="20" />
+    <use href="#pellet" x="340" y="20" />
+    <use href="#pellet" x="400" y="20" />
+    <use href="#pellet" x="460" y="20" />
     <use href="#pellet" x="520" y="20" />
-    <use href="#pellet" x="600" y="20" />
-    <use href="#pellet" x="680" y="20" />
+    <use href="#pellet" x="580" y="20" />
+    <use href="#pellet" x="640" y="20" />
+    <use href="#pellet" x="700" y="20" />
     <use href="#pellet" x="760" y="20" />
-    <use href="#pellet" x="840" y="20" />
-    <use href="#pellet" x="920" y="20" />
-    <use href="#pellet" x="960" y="40" />
-    <use href="#pellet" x="960" y="120" />
-    <use href="#pellet" x="960" y="160" />
-    <use href="#pellet" x="880" y="180" />
-    <use href="#pellet" x="800" y="180" />
+    <use href="#pellet" x="820" y="20" />
+    <use href="#pellet" x="880" y="20" />
+    <use href="#pellet" x="940" y="20" />
+    <use href="#pellet" x="960" y="60" />
+    <use href="#pellet" x="960" y="100" />
+    <use href="#pellet" x="960" y="140" />
+    <use href="#pellet" x="960" y="180" />
+    <use href="#pellet" x="900" y="180" />
+    <use href="#pellet" x="840" y="180" />
+    <use href="#pellet" x="780" y="180" />
     <use href="#pellet" x="720" y="180" />
-    <use href="#pellet" x="640" y="180" />
-    <use href="#pellet" x="560" y="180" />
+    <use href="#pellet" x="660" y="180" />
+    <use href="#pellet" x="600" y="180" />
+    <use href="#pellet" x="540" y="180" />
     <use href="#pellet" x="480" y="180" />
-    <use href="#pellet" x="400" y="180" />
-    <use href="#pellet" x="320" y="180" />
+    <use href="#pellet" x="420" y="180" />
+    <use href="#pellet" x="360" y="180" />
+    <use href="#pellet" x="300" y="180" />
     <use href="#pellet" x="240" y="180" />
-    <use href="#pellet" x="160" y="180" />
-    <use href="#pellet" x="80" y="180" />
-    <use href="#pellet" x="20" y="160" />
-    <use href="#pellet" x="20" y="80" />
+    <use href="#pellet" x="180" y="180" />
+    <use href="#pellet" x="120" y="180" />
+    <use href="#pellet" x="60" y="180" />
+    <use href="#pellet" x="20" y="140" />
+    <use href="#pellet" x="20" y="100" />
+    <use href="#pellet" x="20" y="60" />
   </g>
 
   <!-- Pac-Man moving along the border -->
