@@ -1,7 +1,7 @@
 <svg width="1000" height="200" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <!-- Pac-Man shape -->
-    <path id="pacman" d="M10,10 a10,10 0 1,0 0,-20 l-10,10 z" fill="yellow" />
+    <!-- Pac-Man shape oriented to face right -->
+    <path id="pacman" d="M10,10 a10,10 0 1,0 0,-20 l10,10 z" fill="yellow" />
 
     <!-- Define the path along the border -->
     <path id="borderPath" d="M20,20 H980 V180 H20 Z" fill="none" stroke="none" />
@@ -10,9 +10,9 @@
   <!-- Background rectangle -->
   <rect x="10" y="10" width="980" height="180" fill="#073642" stroke="none" rx="15" ry="15" />
 
-  <!-- Pac-Man moving along the border -->
+  <!-- Pac-Man moving along the border, now correctly oriented -->
   <use href="#pacman">
-    <animateMotion dur="10s" repeatCount="indefinite">
+    <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
       <mpath href="#borderPath" />
     </animateMotion>
   </use>
