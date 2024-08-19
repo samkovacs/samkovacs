@@ -1,43 +1,46 @@
 <svg width="1000" height="200" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <!-- Pac-Man shape scaled down to fit the border -->
-    <path id="pacman" d="M20,-10 A20,20 0 1,1 20,10 L0,0 Z" fill="gold" />
+    <!-- Define Pac-Man with animated mouth -->
+    <g id="pacman">
+      <circle cx="0" cy="0" r="10" fill="gold" />
+      <path d="M0,0 L10,-6 A10,10 0 1,1 10,6 Z" fill="#073642">
+        <animateTransform attributeName="transform" type="rotate" values="0;20;0" dur="0.4s" repeatCount="indefinite" />
+      </path>
+    </g>
 
-    <!-- Define the dot shape scaled down -->
-    <circle id="pacman-dot" cx="0" cy="0" r="3" fill="white" />
+    <!-- Define a dot (pellet) -->
+    <circle id="dot" cx="0" cy="0" r="3" fill="white" />
 
     <!-- Define the path along the border -->
     <path id="borderPath" d="M20,20 H980 V180 H20 Z" fill="none" stroke="none" />
-
-    <!-- Animate Pac-Man along the border -->
-    <animateMotion id="pacman-animation" href="#pacman" dur="10s" repeatCount="indefinite" rotate="auto">
-      <mpath href="#borderPath" />
-    </animateMotion>
-
-    <!-- Animate the dots along the border -->
-    <animateMotion id="dot-animation" href="#pacman-dot" dur="2s" repeatCount="indefinite">
-      <mpath href="#borderPath" />
-    </animateMotion>
   </defs>
 
   <!-- Background rectangle -->
   <rect x="5" y="5" width="990" height="190" fill="#073642" stroke="none" rx="15" ry="15" />
 
-  <!-- Pac-Man and dots moving along the border -->
-  <use href="#pacman" />
-  <use href="#pacman-dot" />
-  <use href="#pacman-dot" x="30" />
-  <use href="#pacman-dot" x="60" />
-  <use href="#pacman-dot" x="90" />
-  <use href="#pacman-dot" x="120" />
+  <!-- Animate Pac-Man along the border -->
+  <use href="#pacman">
+    <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#borderPath" />
+    </animateMotion>
+  </use>
+
+  <!-- Animate dots along the border -->
+  <use href="#dot">
+    <animateMotion dur="10s" repeatCount="indefinite">
+      <mpath href="#borderPath" />
+    </animateMotion>
+  </use>
+  <use href="#dot">
+    <animateMotion dur="10s" begin="0.25s" repeatCount="indefinite">
+      <mpath href="#borderPath" />
+    </animateMotion>
+  </use>
+  <use href="#dot">
+    <animateMotion dur="10s" begin="0.5s" repeatCount="indefinite">
+      <mpath href="#borderPath" />
+    </animateMotion>
+  </use>
 
   <!-- Text content -->
-  <text x="50%" y="50%" text-anchor="middle" fill="#eee8d5" font-family="Verdana, Geneva, sans-serif" font-size="10em" dy=".35em" textLength="950" lengthAdjust="spacingAndGlyphs">
-    Sam Kovacs
-  </text>
-
-  <!-- Glow effect -->
-  <text x="50%" y="50%" text-anchor="middle" fill="#eee8d5" font-family="Verdana, Geneva, sans-serif" font-size="10em" dy=".35em" textLength="950" lengthAdjust="spacingAndGlyphs" filter="url(#glow)">
-    Sam Kovacs
-  </text>
-</svg>
+  <text x="50%" y="
