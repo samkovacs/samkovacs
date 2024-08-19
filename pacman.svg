@@ -1,36 +1,36 @@
 <svg width="1000" height="200" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <!-- Pac-Man with mouth open -->
+    <!-- Pac-Man shape with mouth open -->
     <path id="pacman-open" d="M10,10 a10,10 0 1,0 0,-20 l-10,10 z" fill="yellow" />
 
-    <!-- Pac-Man with mouth closed -->
+    <!-- Pac-Man shape with mouth closed -->
     <circle id="pacman-closed" cx="0" cy="0" r="10" fill="yellow" />
 
-    <!-- Define the dot -->
+    <!-- Define a dot -->
     <circle id="dot" cx="0" cy="0" r="3" fill="white" />
 
-    <!-- Define the super-pellet -->
+    <!-- Define a super-pellet -->
     <circle id="super-pellet" cx="0" cy="0" r="5" fill="white">
       <animate attributeName="r" values="5;8;5" dur="1s" repeatCount="indefinite" />
       <animate attributeName="opacity" values="1;0.5;1" dur="1s" repeatCount="indefinite" />
     </circle>
 
-    <!-- Define the ghost -->
+    <!-- Define the ghost shape -->
     <path id="ghost" d="M0 0 Q 5 -5 10 0 T 20 0 V 10 Q 19 12 18 10 Q 17 8 16 10 Q 15 12 14 10 Q 13 8 12 10 Q 11 12 10 10 Q 9 8 8 10 Q 7 12 6 10 Q 5 8 4 10 Q 3 12 2 10 Q 1 8 0 10 Z" fill="cyan" />
 
-    <!-- Define the animation path -->
+    <!-- Define the path along the border -->
     <path id="borderPath" d="M20,20 H980 V180 H20 Z" fill="none" stroke="none" />
 
-    <!-- Pac-Man animation along the border with mouth open/close -->
-    <animateMotion href="#pacman-open" dur="10s" repeatCount="indefinite">
+    <!-- Animate Pac-Man along the border with open/close mouth effect -->
+    <animateMotion id="pacman-open-animation" href="#pacman-open" dur="10s" repeatCount="indefinite">
       <mpath href="#borderPath" />
     </animateMotion>
-    <animateMotion href="#pacman-closed" dur="10s" repeatCount="indefinite" keyPoints="0;0.5;1" keyTimes="0;0.5;1">
+    <animateMotion id="pacman-closed-animation" href="#pacman-closed" dur="10s" repeatCount="indefinite" keyPoints="0;0.5;1" keyTimes="0;0.5;1">
       <mpath href="#borderPath" />
     </animateMotion>
 
-    <!-- Ghost animation along the border -->
-    <animateMotion href="#ghost" dur="10s" begin="1s" repeatCount="indefinite">
+    <!-- Animate the ghost along the border with a delay -->
+    <animateMotion id="ghost-animation" href="#ghost" dur="10s" begin="2s" repeatCount="indefinite">
       <mpath href="#borderPath" />
     </animateMotion>
   </defs>
@@ -38,10 +38,11 @@
   <!-- Background rectangle -->
   <rect x="10" y="10" width="980" height="180" fill="#073642" stroke="none" rx="15" ry="15" />
 
-  <!-- Dots around the border -->
-  <use href="#dot" x="20" y="20" />
-  <use href="#dot" x="40" y="20" />
-  <!-- Repeat similar lines around the entire border -->
+  <!-- Dots along the border -->
+  <use href="#dot" x="30" y="20" />
+  <use href="#dot" x="60" y="20" />
+  <use href="#dot" x="90" y="20" />
+  <!-- Repeat similar dot positions for the full border -->
 
   <!-- Super-pellets at each corner -->
   <use href="#super-pellet" x="20" y="20" />
@@ -49,7 +50,7 @@
   <use href="#super-pellet" x="20" y="180" />
   <use href="#super-pellet" x="980" y="180" />
 
-  <!-- Pac-Man and ghost -->
+  <!-- Pac-Man and ghost moving along the border -->
   <use href="#pacman-open" />
   <use href="#pacman-closed" visibility="hidden" />
   <use href="#ghost" />
