@@ -46,7 +46,6 @@
 
       const adjustTextSize = () => {
         fitTextToWidth('bannerText', 900);
-        fitTextToWidth('bannerTextGlow', 900);
       };
 
       adjustTextSize();
