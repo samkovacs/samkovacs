@@ -15,189 +15,189 @@
 
   <g id="pellets">
     <use href="#pellet" x="20" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="0s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=0s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="60" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="0.6667s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=1s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="100" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="1.3334s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=2s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="140" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="2.0001s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=3s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="180" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="2.6668s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=4s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="220" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="3.3335s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=5s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="260" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="4.0002s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=6s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="300" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="4.6669s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=7s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="340" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="5.3336s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=8s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="380" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="6.0003s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=9s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="420" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="6.667s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=10s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="460" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="7.3337s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=11s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="500" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="8.0004s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=12s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="540" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="8.6671s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=13s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="580" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="9.3338s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=14s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="620" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="10.0005s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=15s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="660" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="10.6672s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=16s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="700" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="11.3339s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=17s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="740" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="12.0006s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=18s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="780" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="12.6673s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=19s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="820" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="13.334s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=20s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="860" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="14.0007s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=21s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="900" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="14.6674s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=22s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="940" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="15.3341s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=23s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="980" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="16.0008s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=24s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="1020" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="16.6675s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=25s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="1060" y="20">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="17.3342s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=26s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="1060" y="60">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="18.0009s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=27s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="1060" y="100">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="18.6676s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=28s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="1060" y="140">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="19.3343s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=29s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="1060" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="20.001s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=30s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="1020" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="20.6677s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=31s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="980" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="21.3344s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=32s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="940" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="22.0011s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=33s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="900" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="22.6678s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=34s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="860" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="23.3345s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=35s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="820" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="24.0012s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=36s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="780" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="24.6679s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=37s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="740" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="25.3346s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=38s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="700" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="26.0013s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=39s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="660" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="26.668s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=40s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="620" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="27.3347s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=41s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="580" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="28.0014s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=42s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="540" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="28.6681s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=43s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="500" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="29.3348s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=44s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="460" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="30.0015s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=45s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="420" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="30.6682s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=46s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="380" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="31.3349s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=47s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="340" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="32.0016s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=48s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="300" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="32.6683s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=49s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="260" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="33.335s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=50s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="220" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="34.0017s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=51s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="180" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="34.6684s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=52s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="140" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="35.3351s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=53s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="100" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="36.0018s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=54s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="60" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="36.6685s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=55s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="20" y="180">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="37.3352s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=56s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="20" y="140">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="38.0019s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=57s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="20" y="100">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="38.6686s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=58s repeatCount="indefinite" />
     </use>
     <use href="#pellet" x="20" y="60">
-      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="40s" begin="39.3353s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;0.01;0.75;1" dur="60s" begin=59s repeatCount="indefinite" />
     </use>
   </g>
 
   <use href="#pacman">
-    <animateMotion dur="40s" repeatCount="indefinite" rotate="auto">
+    <animateMotion dur="60s" repeatCount="indefinite" rotate="auto">
       <mpath href="#borderPath" />
     </animateMotion>
   </use>
