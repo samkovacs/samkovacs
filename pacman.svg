@@ -20,28 +20,34 @@
 
   <!-- Evenly spaced pellets along the border, including corners -->
   <g id="pellets">
-    <!-- Top side -->
-    <use href="#pellet" x="20" y="20" />    <!-- Top-left corner -->
-    <use href="#pellet" x="220" y="20" />
-    <use href="#pellet" x="420" y="20" />
+    <!-- Top side (960px long) -->
+    <use href="#pellet" x="20" y="20" />   <!-- Top-left corner -->
+    <use href="#pellet" x="140" y="20" />
+    <use href="#pellet" x="260" y="20" />
+    <use href="#pellet" x="380" y="20" />
+    <use href="#pellet" x="500" y="20" />
     <use href="#pellet" x="620" y="20" />
-    <use href="#pellet" x="820" y="20" />
+    <use href="#pellet" x="740" y="20" />
+    <use href="#pellet" x="860" y="20" />
     <use href="#pellet" x="960" y="20" />   <!-- Top-right corner -->
 
-    <!-- Right side -->
+    <!-- Right side (160px long) -->
     <use href="#pellet" x="960" y="60" />
     <use href="#pellet" x="960" y="100" />
     <use href="#pellet" x="960" y="140" />
     <use href="#pellet" x="960" y="180" />  <!-- Bottom-right corner -->
 
-    <!-- Bottom side -->
-    <use href="#pellet" x="760" y="180" />
-    <use href="#pellet" x="560" y="180" />
-    <use href="#pellet" x="360" y="180" />
-    <use href="#pellet" x="160" y="180" />
+    <!-- Bottom side (960px long) -->
+    <use href="#pellet" x="860" y="180" />
+    <use href="#pellet" x="740" y="180" />
+    <use href="#pellet" x="620" y="180" />
+    <use href="#pellet" x="500" y="180" />
+    <use href="#pellet" x="380" y="180" />
+    <use href="#pellet" x="260" y="180" />
+    <use href="#pellet" x="140" y="180" />
     <use href="#pellet" x="20" y="180" />   <!-- Bottom-left corner -->
 
-    <!-- Left side -->
+    <!-- Left side (160px long) -->
     <use href="#pellet" x="20" y="140" />
     <use href="#pellet" x="20" y="100" />
     <use href="#pellet" x="20" y="60" />
