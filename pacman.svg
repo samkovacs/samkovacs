@@ -1,17 +1,15 @@
 <svg width="1000" height="200" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <!-- Pac-Man shape with animated mouth -->
+    <!-- Define Pac-Man with animated mouth -->
     <g id="pacman">
       <circle cx="0" cy="0" r="10" fill="gold" />
       <path d="M0,0 L10,-6 A10,10 0 1,1 10,6 Z" fill="#073642">
-        <animateTransform attributeName="transform" type="rotate" values="0;45;0" dur="0.5s" repeatCount="indefinite" />
+        <animateTransform attributeName="transform" type="rotate" values="0;45;0" dur="0.4s" repeatCount="indefinite" />
       </path>
     </g>
 
-    <!-- Define a dot (pellet) -->
-    <circle id="dot" cx="0" cy="0" r="5" fill="white">
-      <animate attributeName="opacity" values="1;0" keyTimes="0.8;1" dur="10s" repeatCount="indefinite" />
-    </circle>
+    <!-- Define a pellet (dot) -->
+    <circle id="pellet" r="5" fill="white" />
 
     <!-- Define the path along the border -->
     <path id="borderPath" d="M20,20 H960 V180 H40 Z" fill="none" stroke="none" />
@@ -20,34 +18,61 @@
   <!-- Background rectangle -->
   <rect x="5" y="5" width="990" height="190" fill="#073642" stroke="none" rx="15" ry="15" />
 
-  <!-- Evenly spaced pellets along the entire border -->
-  <use href="#dot">
-    <animateMotion dur="10s" repeatCount="indefinite">
-      <mpath href="#borderPath" />
-    </animateMotion>
-  </use>
-  <use href="#dot">
-    <animateMotion dur="10s" begin="0.3s" repeatCount="indefinite">
-      <mpath href="#borderPath" />
-    </animateMotion>
-  </use>
-  <use href="#dot">
-    <animateMotion dur="10s" begin="0.6s" repeatCount="indefinite">
-      <mpath href="#borderPath" />
-    </animateMotion>
-  </use>
-  <use href="#dot">
-    <animateMotion dur="10s" begin="0.9s" repeatCount="indefinite">
-      <mpath href="#borderPath" />
-    </animateMotion>
-  </use>
-  <use href="#dot">
-    <animateMotion dur="10s" begin="1.2s" repeatCount="indefinite">
-      <mpath href="#borderPath" />
-    </animateMotion>
-  </use>
+  <!-- Draw stationary pellets along the border -->
+  <g id="pellets">
+    <use href="#pellet">
+      <animateMotion dur="10s" repeatCount="indefinite">
+        <mpath href="#borderPath" />
+      </animateMotion>
+    </use>
+    <use href="#pellet" transform="translate(100, 0)">
+      <animateMotion dur="10s" begin="0s" repeatCount="indefinite">
+        <mpath href="#borderPath" />
+      </animateMotion>
+    </use>
+    <use href="#pellet" transform="translate(200, 0)">
+      <animateMotion dur="10s" begin="0s" repeatCount="indefinite">
+        <mpath href="#borderPath" />
+      </animateMotion>
+    </use>
+    <use href="#pellet" transform="translate(300, 0)">
+      <animateMotion dur="10s" begin="0s" repeatCount="indefinite">
+        <mpath href="#borderPath" />
+      </animateMotion>
+    </use>
+    <use href="#pellet" transform="translate(400, 0)">
+      <animateMotion dur="10s" begin="0s" repeatCount="indefinite">
+        <mpath href="#borderPath" />
+      </animateMotion>
+    </use>
+    <use href="#pellet" transform="translate(500, 0)">
+      <animateMotion dur="10s" begin="0s" repeatCount="indefinite">
+        <mpath href="#borderPath" />
+      </animateMotion>
+    </use>
+    <use href="#pellet" transform="translate(600, 0)">
+      <animateMotion dur="10s" begin="0s" repeatCount="indefinite">
+        <mpath href="#borderPath" />
+      </animateMotion>
+    </use>
+    <use href="#pellet" transform="translate(700, 0)">
+      <animateMotion dur="10s" begin="0s" repeatCount="indefinite">
+        <mpath href="#borderPath" />
+      </animateMotion>
+    </use>
+    <use href="#pellet" transform="translate(800, 0)">
+      <animateMotion dur="10s" begin="0s" repeatCount="indefinite">
+        <mpath href="#borderPath" />
+      </animateMotion>
+    </use>
+    <use href="#pellet" transform="translate(900, 0)">
+      <animateMotion dur="10s" begin="0s" repeatCount="indefinite">
+        <mpath href="#borderPath" />
+      </animateMotion>
+    </use>
+  </g>
 
-  <!-- Pac-Man moving along the border, eating pellets -->
+  <!-- Pac-Man moving along the border -->
   <use href="#pacman">
     <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
       <mpath href="#borderPath" />
