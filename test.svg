@@ -30,22 +30,35 @@
     Revenue Development and Planning
   </text>
 
-  <!-- JavaScript for Dynamic Text Scaling -->
+  <!-- JavaScript for Optimized Dynamic Text Scaling -->
   <script type="application/ecmascript">
     <![CDATA[
       const fitTextToWidth = (elementId, maxWidth) => {
         const textElement = document.getElementById(elementId);
-        let fontSize = 48; // Start with a base font size
+        let fontSize = 100; // Start with a large font size
         textElement.setAttribute('font-size', fontSize);
 
+        // Reduce font size if it overflows
         while (textElement.getBBox().width > maxWidth && fontSize > 5) {
           fontSize -= 1;
           textElement.setAttribute('font-size', fontSize);
+        }
+
+        // Increase font size to fill space optimally
+        while (textElement.getBBox().width < maxWidth && fontSize < 200) {
+          fontSize += 1;
+          textElement.setAttribute('font-size', fontSize);
+          if (textElement.getBBox().width > maxWidth) {
+            fontSize -= 1;  // Ensure it doesn't overflow
+            textElement.setAttribute('font-size', fontSize);
+            break;
+          }
         }
       };
 
       const adjustTextSize = () => {
         fitTextToWidth('bannerText', 900);
+        fitTextToWidth('bannerTextGlow', 900);
       };
 
       adjustTextSize();
