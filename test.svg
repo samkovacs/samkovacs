@@ -1,82 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
-  <style type="text/css">
-    /* Embedded CSS */
-    @property --bg-angle {
-      inherits: false;
-      initial-value: 0deg;
-      syntax: "<angle>";
-    }
+<svg fill="none" viewBox="0 0 400 400" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <style>
+            h1 {
+                color: red;
+                animation: mymove 2s infinite;
+            }
 
-    @keyframes spin {
-      to {
-        --bg-angle: 360deg;
-      }
-    }
-
-    article {
-      animation: spin 2.5s infinite linear paused;
-      background:
-        linear-gradient(
-            to bottom,
-            oklch(0.35 0.37 330 / 0.95),
-            oklch(0.35 0.37 330 / 0.95)
-          )
-          padding-box,
-        conic-gradient(
-            from var(--bg-angle),
-            oklch(0.95 0.17 0.0) 0 0
-          )
-          border-box;
-      border: 6px solid transparent;
-      border-radius: 1rem;
-      box-shadow: 0.125rem 0.25rem 0.25rem 0.5rem oklch(0.1 0.37 315 / 0.25);
-      color: white;
-      padding: 1rem;
-      width: min(400px, 90vw);
-    }
-
-    article:hover {
-      animation-play-state: running;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      font-size: 18px;
-      line-height: 1.45;
-    }
-
-    body {
-      margin: 0;
-      height: 100%;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background:
-        radial-gradient(
-            circle,
-            oklch(0.15 0.2 330 / 0),
-            oklch(0.15 0.2 330 / 1)
-          ),
-        linear-gradient(
-            344deg,
-            oklch(0.3 0.37 310),
-            oklch(0.35 0.37 330),
-            oklch(0.3 0.37 310)
-          );
-    }
-  </style>
-
-  <foreignObject x="0" y="0" width="100%" height="100%">
-    <body xmlns="http://www.w3.org/1999/xhtml">
-      <article>
-        <h1>Hey look, this is only CSS!</h1>
-        <p>I didn’t know you could do gradient borders like this. Hover over this element to see the gradient animate!</p>
-      </article>
-    </body>
-  </foreignObject>
+            @keyframes mymove {
+                from {
+                    color: red;
+                }
+                to {
+                    color: yellow;
+                }
+            }
+            </style>
+            <h1>HELLO WORLD!</h1>
+        </div>
+    </foreignObject>
 </svg>
