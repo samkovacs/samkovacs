@@ -12,7 +12,7 @@
     <circle id="pellet" r="4.5" fill="white" />
 
     <!-- Define the path along the border with extended top and bottom sides -->
-    <path id="borderPath" d="M20,20 H1040 V180 H40 Z" fill="none" stroke="none" />
+    <path id="borderPath" d="M20,20 H1060 V180 H40 Z" fill="none" stroke="none" />
   </defs>
 
   <!-- Background rectangle -->
@@ -47,13 +47,13 @@
     <use href="#pellet" x="940" y="20" />
     <use href="#pellet" x="980" y="20" />
     <use href="#pellet" x="1020" y="20" />
-    <use href="#pellet" x="1040" y="20" />   <!-- Top-right corner -->
+    <use href="#pellet" x="1060" y="20" />   <!-- Top-right corner -->
 
     <!-- Right side (160px long) -->
-    <use href="#pellet" x="1040" y="60" />
-    <use href="#pellet" x="1040" y="100" />
-    <use href="#pellet" x="1040" y="140" />
-    <use href="#pellet" x="1040" y="180" />  <!-- Bottom-right corner -->
+    <use href="#pellet" x="1060" y="60" />
+    <use href="#pellet" x="1060" y="100" />
+    <use href="#pellet" x="1060" y="140" />
+    <use href="#pellet" x="1060" y="180" />  <!-- Bottom-right corner -->
 
     <!-- Bottom side (1040px long) -->
     <use href="#pellet" x="1020" y="180" />
