@@ -1,6 +1,1 @@
-# CSS Gradient Animation in GitHub README
-
-This README demonstrates embedding a CSS animated gradient inside an SVG within a GitHub README.
-
-![CSS Gradient Animation](./test.svg)
-
+<img src="https://github.com/samkovacs/samkovacs/blob/11fb1fd35688c872a123f86eee503237c43e66f4/test.svg">
