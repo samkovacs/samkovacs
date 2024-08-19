@@ -1,40 +1,53 @@
 <svg width="1000" height="200" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <!-- Define Pac-Man with animated mouth -->
+    <!-- Pac-Man shape with animated mouth -->
     <g id="pacman">
       <circle cx="0" cy="0" r="10" fill="gold" />
       <path d="M0,0 L10,-6 A10,10 0 1,1 10,6 Z" fill="#073642">
-        <animateTransform attributeName="transform" type="rotate" values="0;45;0" dur="0.4s" repeatCount="indefinite" />
+        <animateTransform attributeName="transform" type="rotate" values="0;45;0" dur="0.5s" repeatCount="indefinite" />
       </path>
     </g>
 
     <!-- Define a dot (pellet) -->
-    <circle id="dot" cx="0" cy="0" r="5" fill="white" />
+    <circle id="dot" cx="0" cy="0" r="5" fill="white">
+      <animate attributeName="opacity" values="1;0" keyTimes="0.8;1" dur="10s" repeatCount="indefinite" />
+    </circle>
 
     <!-- Define the path along the border -->
     <path id="borderPath" d="M20,20 H960 V180 H40 Z" fill="none" stroke="none" />
   </defs>
 
   <!-- Background rectangle -->
-  <rect x="10" y="10" width="980" height="180" fill="#073642" stroke="none" rx="15" ry="15" />
+  <rect x="5" y="5" width="990" height="190" fill="#073642" stroke="none" rx="15" ry="15" />
 
-  <!-- Stationary pellets along the border -->
-  <use href="#dot" x="30" y="20" />
-  <use href="#dot" x="100" y="20" />
-  <use href="#dot" x="170" y="20" />
-  <use href="#dot" x="240" y="20" />
-  <use href="#dot" x="310" y="20" />
-  <use href="#dot" x="380" y="20" />
-  <use href="#dot" x="450" y="20" />
-  <use href="#dot" x="520" y="20" />
-  <use href="#dot" x="590" y="20" />
-  <use href="#dot" x="660" y="20" />
-  <use href="#dot" x="730" y="20" />
-  <use href="#dot" x="800" y="20" />
-  <use href="#dot" x="870" y="20" />
-  <use href="#dot" x="940" y="20" />
+  <!-- Evenly spaced pellets along the entire border -->
+  <use href="#dot">
+    <animateMotion dur="10s" repeatCount="indefinite">
+      <mpath href="#borderPath" />
+    </animateMotion>
+  </use>
+  <use href="#dot">
+    <animateMotion dur="10s" begin="0.3s" repeatCount="indefinite">
+      <mpath href="#borderPath" />
+    </animateMotion>
+  </use>
+  <use href="#dot">
+    <animateMotion dur="10s" begin="0.6s" repeatCount="indefinite">
+      <mpath href="#borderPath" />
+    </animateMotion>
+  </use>
+  <use href="#dot">
+    <animateMotion dur="10s" begin="0.9s" repeatCount="indefinite">
+      <mpath href="#borderPath" />
+    </animateMotion>
+  </use>
+  <use href="#dot">
+    <animateMotion dur="10s" begin="1.2s" repeatCount="indefinite">
+      <mpath href="#borderPath" />
+    </animateMotion>
+  </use>
 
-  <!-- Pac-Man moving along the border -->
+  <!-- Pac-Man moving along the border, eating pellets -->
   <use href="#pacman">
     <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
       <mpath href="#borderPath" />
