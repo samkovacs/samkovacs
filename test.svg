@@ -14,7 +14,7 @@
 
   <!-- Scalable Text content with dynamic fitting -->
   <text x="50%" y="50%" text-anchor="middle" fill="#eee8d5" font-size="48" font-family="Verdana, Geneva, sans-serif" dy=".35em" textLength="900" lengthAdjust="spacingAndGlyphs">
-    Revenue Development and Planning
+    Abandon Hope All Ye Who Enter Here!
   </text>
 
   <!-- Additional Feature: Glow effect around the text -->
