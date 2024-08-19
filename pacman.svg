@@ -8,7 +8,7 @@
       </path>
     </g>
 
-    <!-- Define a pellet (dot), now 10% smaller -->
+    <!-- Define a pellet (dot), 10% smaller -->
     <circle id="pellet" r="4.5" fill="white" />
 
     <!-- Define the path along the border -->
@@ -18,43 +18,30 @@
   <!-- Background rectangle -->
   <rect x="5" y="5" width="990" height="190" fill="#073642" stroke="none" rx="15" ry="15" />
 
-  <!-- Evenly spaced pellets along the entire border -->
+  <!-- Evenly spaced pellets along the border, including corners -->
   <g id="pellets">
-    <use href="#pellet" x="40" y="20" />
-    <use href="#pellet" x="100" y="20" />
-    <use href="#pellet" x="160" y="20" />
+    <!-- Top side -->
+    <use href="#pellet" x="20" y="20" />    <!-- Top-left corner -->
     <use href="#pellet" x="220" y="20" />
-    <use href="#pellet" x="280" y="20" />
-    <use href="#pellet" x="340" y="20" />
-    <use href="#pellet" x="400" y="20" />
-    <use href="#pellet" x="460" y="20" />
-    <use href="#pellet" x="520" y="20" />
-    <use href="#pellet" x="580" y="20" />
-    <use href="#pellet" x="640" y="20" />
-    <use href="#pellet" x="700" y="20" />
-    <use href="#pellet" x="760" y="20" />
+    <use href="#pellet" x="420" y="20" />
+    <use href="#pellet" x="620" y="20" />
     <use href="#pellet" x="820" y="20" />
-    <use href="#pellet" x="880" y="20" />
-    <use href="#pellet" x="940" y="20" />
+    <use href="#pellet" x="960" y="20" />   <!-- Top-right corner -->
+
+    <!-- Right side -->
     <use href="#pellet" x="960" y="60" />
     <use href="#pellet" x="960" y="100" />
     <use href="#pellet" x="960" y="140" />
-    <use href="#pellet" x="960" y="180" />
-    <use href="#pellet" x="900" y="180" />
-    <use href="#pellet" x="840" y="180" />
-    <use href="#pellet" x="780" y="180" />
-    <use href="#pellet" x="720" y="180" />
-    <use href="#pellet" x="660" y="180" />
-    <use href="#pellet" x="600" y="180" />
-    <use href="#pellet" x="540" y="180" />
-    <use href="#pellet" x="480" y="180" />
-    <use href="#pellet" x="420" y="180" />
+    <use href="#pellet" x="960" y="180" />  <!-- Bottom-right corner -->
+
+    <!-- Bottom side -->
+    <use href="#pellet" x="760" y="180" />
+    <use href="#pellet" x="560" y="180" />
     <use href="#pellet" x="360" y="180" />
-    <use href="#pellet" x="300" y="180" />
-    <use href="#pellet" x="240" y="180" />
-    <use href="#pellet" x="180" y="180" />
-    <use href="#pellet" x="120" y="180" />
-    <use href="#pellet" x="60" y="180" />
+    <use href="#pellet" x="160" y="180" />
+    <use href="#pellet" x="20" y="180" />   <!-- Bottom-left corner -->
+
+    <!-- Left side -->
     <use href="#pellet" x="20" y="140" />
     <use href="#pellet" x="20" y="100" />
     <use href="#pellet" x="20" y="60" />
