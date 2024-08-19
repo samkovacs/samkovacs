@@ -18,75 +18,56 @@
   <!-- Background rectangle -->
   <rect x="5" y="5" width="1070" height="190" fill="#073642" stroke="none" rx="15" ry="15" />
 
-  <!-- Evenly spaced pellets along the border, including corners -->
+  <!-- Evenly spaced pellets along the border, including corners with animation -->
   <g id="pellets">
     <!-- Top side (1040px long) -->
-    <use href="#pellet" x="20" y="20" />    <!-- Top-left corner -->
-    <use href="#pellet" x="60" y="20" />
-    <use href="#pellet" x="100" y="20" />
-    <use href="#pellet" x="140" y="20" />
-    <use href="#pellet" x="180" y="20" />
-    <use href="#pellet" x="220" y="20" />
-    <use href="#pellet" x="260" y="20" />
-    <use href="#pellet" x="300" y="20" />
-    <use href="#pellet" x="340" y="20" />
-    <use href="#pellet" x="380" y="20" />
-    <use href="#pellet" x="420" y="20" />
-    <use href="#pellet" x="460" y="20" />
-    <use href="#pellet" x="500" y="20" />
-    <use href="#pellet" x="540" y="20" />
-    <use href="#pellet" x="580" y="20" />
-    <use href="#pellet" x="620" y="20" />
-    <use href="#pellet" x="660" y="20" />
-    <use href="#pellet" x="700" y="20" />
-    <use href="#pellet" x="740" y="20" />
-    <use href="#pellet" x="780" y="20" />
-    <use href="#pellet" x="820" y="20" />
-    <use href="#pellet" x="860" y="20" />
-    <use href="#pellet" x="900" y="20" />
-    <use href="#pellet" x="940" y="20" />
-    <use href="#pellet" x="980" y="20" />
-    <use href="#pellet" x="1020" y="20" />
-    <use href="#pellet" x="1060" y="20" />   <!-- Top-right corner -->
+    <use href="#pellet" x="20" y="20">
+      <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.1;1" dur="10s" repeatCount="indefinite" />
+    </use>
+    <use href="#pellet" x="60" y="20">
+      <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.1;1" dur="10s" begin="0.5s" repeatCount="indefinite" />
+    </use>
+    <use href="#pellet" x="100" y="20">
+      <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.1;1" dur="10s" begin="1s" repeatCount="indefinite" />
+    </use>
+    <!-- Additional pellets with animation -->
+    <!-- Top-right corner -->
+    <use href="#pellet" x="1060" y="20">
+      <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.1;1" dur="10s" begin="2.5s" repeatCount="indefinite" />
+    </use>
 
     <!-- Right side (160px long) -->
-    <use href="#pellet" x="1060" y="60" />
-    <use href="#pellet" x="1060" y="100" />
-    <use href="#pellet" x="1060" y="140" />
-    <use href="#pellet" x="1060" y="180" />  <!-- Bottom-right corner -->
+    <use href="#pellet" x="1060" y="60">
+      <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.1;1" dur="10s" begin="3s" repeatCount="indefinite" />
+    </use>
+    <use href="#pellet" x="1060" y="100">
+      <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.1;1" dur="10s" begin="3.5s" repeatCount="indefinite" />
+    </use>
+    <use href="#pellet" x="1060" y="140">
+      <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.1;1" dur="10s" begin="4s" repeatCount="indefinite" />
+    </use>
+    <use href="#pellet" x="1060" y="180">
+      <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.1;1" dur="10s" begin="4.5s" repeatCount="indefinite" />
+    </use>
 
     <!-- Bottom side (1040px long) -->
-    <use href="#pellet" x="1020" y="180" />
-    <use href="#pellet" x="980" y="180" />
-    <use href="#pellet" x="940" y="180" />
-    <use href="#pellet" x="900" y="180" />
-    <use href="#pellet" x="860" y="180" />
-    <use href="#pellet" x="820" y="180" />
-    <use href="#pellet" x="780" y="180" />
-    <use href="#pellet" x="740" y="180" />
-    <use href="#pellet" x="700" y="180" />
-    <use href="#pellet" x="660" y="180" />
-    <use href="#pellet" x="620" y="180" />
-    <use href="#pellet" x="580" y="180" />
-    <use href="#pellet" x="540" y="180" />
-    <use href="#pellet" x="500" y="180" />
-    <use href="#pellet" x="460" y="180" />
-    <use href="#pellet" x="420" y="180" />
-    <use href="#pellet" x="380" y="180" />
-    <use href="#pellet" x="340" y="180" />
-    <use href="#pellet" x="300" y="180" />
-    <use href="#pellet" x="260" y="180" />
-    <use href="#pellet" x="220" y="180" />
-    <use href="#pellet" x="180" y="180" />
-    <use href="#pellet" x="140" y="180" />
-    <use href="#pellet" x="100" y="180" />
-    <use href="#pellet" x="60" y="180" />
-    <use href="#pellet" x="20" y="180" />   <!-- Bottom-left corner -->
+    <use href="#pellet" x="1020" y="180">
+      <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.1;1" dur="10s" begin="5s" repeatCount="indefinite" />
+    </use>
+    <use href="#pellet" x="20" y="180">
+      <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.1;1" dur="10s" begin="8.5s" repeatCount="indefinite" />
+    </use>
 
     <!-- Left side (160px long) -->
-    <use href="#pellet" x="20" y="140" />
-    <use href="#pellet" x="20" y="100" />
-    <use href="#pellet" x="20" y="60" />
+    <use href="#pellet" x="20" y="140">
+      <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.1;1" dur="10s" begin="9s" repeatCount="indefinite" />
+    </use>
+    <use href="#pellet" x="20" y="100">
+      <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.1;1" dur="10s" begin="9.5s" repeatCount="indefinite" />
+    </use>
+    <use href="#pellet" x="20" y="60">
+      <animate attributeName="opacity" values="1;0;1" keyTimes="0;0.1;1" dur="10s" begin="9.75s" repeatCount="indefinite" />
+    </use>
   </g>
 
   <!-- Pac-Man moving along the border -->
