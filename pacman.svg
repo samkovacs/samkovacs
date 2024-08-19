@@ -38,21 +38,13 @@
   <!-- Background rectangle -->
   <rect x="10" y="10" width="980" height="180" fill="#073642" stroke="none" rx="15" ry="15" />
 
-  <!-- Dots along the border -->
-  <use href="#dot">
-    <animateMotion dur="10s" repeatCount="indefinite">
-      <mpath href="#borderPath" />
-    </animateMotion>
-  </use>
-
   <!-- Super-pellets at each corner -->
   <use href="#super-pellet" x="20" y="20" />
   <use href="#super-pellet" x="980" y="20" />
   <use href="#super-pellet" x="20" y="180" />
   <use href="#super-pellet" x="980" y="180" />
 
-  <!-- Pac-Man and ghost moving along the border -->
+  <!-- Pac-Man moving along the border -->
   <use href="#pacman-open" />
   <use href="#pacman-closed" visibility="hidden" />
-  <use href="#ghost" />
 </svg>
