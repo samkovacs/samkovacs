@@ -1,0 +1,64 @@
+<svg width="1000" height="200" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Define the Pac-Man shape -->
+    <path id="pacman" d="M20,50 a30,30 0 1,0 0,-60 l-20,20 l20,20 z" fill="yellow" />
+    
+    <!-- Define the dot -->
+    <circle id="dot" cx="0" cy="0" r="5" fill="white" />
+    
+    <!-- Define the ghost shape -->
+    <path id="ghost" d="M0 0 Q 10 -10 20 0 T 40 0 Q 50 -10 60 0 T 100 0 V 30 Q 95 35 90 30 Q 85 25 80 30 Q 75 35 70 30 Q 65 25 60 30 Q 55 35 50 30 Q 45 25 40 30 Q 35 35 30 30 Q 25 25 20 30 Q 15 35 10 30 Q 5 25 0 30 Z" fill="cyan" />
+
+    <!-- Define a motion path for the border animation -->
+    <path id="borderPath" d="M20,20 H980 V180 H20 Z" fill="none" stroke="none" />
+
+    <!-- Define the Pac-Man animation along the border -->
+    <animateMotion href="#pacman" dur="10s" repeatCount="indefinite">
+      <mpath href="#borderPath" />
+    </animateMotion>
+
+    <!-- Define the dots animation along the border -->
+    <animateMotion href="#dot" dur="10s" repeatCount="indefinite">
+      <mpath href="#borderPath" />
+    </animateMotion>
+
+    <!-- Define the ghost animation along the border -->
+    <animateMotion href="#ghost" dur="10s" begin="2s" repeatCount="indefinite">
+      <mpath href="#borderPath" />
+    </animateMotion>
+  </defs>
+
+  <!-- Rectangle background -->
+  <rect x="5" y="5" width="990" height="190" fill="#073642" stroke="none" rx="15" ry="15" />
+
+  <!-- Scalable Text content -->
+  <text x="50%" y="50%" text-anchor="middle" fill="#eee8d5" font-family="Verdana, Geneva, sans-serif" font-size="10em" dy=".35em" textLength="950" lengthAdjust="spacingAndGlyphs">
+    Sam Kovacs
+  </text>
+
+  <!-- Additional Feature: Glow effect around the text -->
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="3.5" result="coloredBlur" />
+    <feMerge>
+      <feMergeNode in="coloredBlur" />
+      <feMergeNode in="SourceGraphic" />
+    </feMerge>
+  </filter>
+
+  <text x="50%" y="50%" text-anchor="middle" fill="#eee8d5" font-family="Verdana, Geneva, sans-serif" font-size="10em" dy=".35em" textLength="950" lengthAdjust="spacingAndGlyphs" filter="url(#glow)">
+    Sam Kovacs
+  </text>
+
+  <!-- Pac-Man, dots, and ghost along the border -->
+  <use href="#pacman" />
+  <use href="#dot" x="100" />
+  <use href="#dot" x="200" />
+  <use href="#dot" x="300" />
+  <use href="#dot" x="400" />
+  <use href="#dot" x="500" />
+  <use href="#dot" x="600" />
+  <use href="#dot" x="700" />
+  <use href="#dot" x="800" />
+  <use href="#dot" x="900" />
+  <use href="#ghost" />
+</svg>
