@@ -1,1 +1,1 @@
-![img](./pacman.svg)
+![img](./test.svg)
