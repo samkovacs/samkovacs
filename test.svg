@@ -1,19 +1,19 @@
 <svg width="500" height="100" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Define the gradient for the border -->
-    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Define the animated gradient for the border -->
+    <linearGradient id="animatedGradient" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00f" />
-      <stop offset="100%" stop-color="#0ff" />
-      <animate attributeName="x1" values="0%;100%" dur="5s" repeatCount="indefinite" />
-      <animate attributeName="x2" values="100%;0%" dur="5s" repeatCount="indefinite" />
+      <stop offset="50%" stop-color="#0ff" />
+      <stop offset="100%" stop-color="#00f" />
+      <animateTransform attributeName="gradientTransform" type="rotate" from="0 0.5 0.5" to="360 0.5 0.5" dur="10s" repeatCount="indefinite" />
     </linearGradient>
   </defs>
 
-  <!-- Rectangle with the animated gradient border -->
-  <rect x="5" y="5" width="490" height="90" fill="none" stroke="url(#blueGradient)" stroke-width="5" rx="10" ry="10" />
+  <!-- Rectangle with animated gradient border and blue background -->
+  <rect x="5" y="5" width="490" height="90" fill="#e0f7fa" stroke="url(#animatedGradient)" stroke-width="5" rx="10" ry="10" />
 
   <!-- Text content -->
-  <text x="50%" y="50%" text-anchor="middle" fill="#000" font-size="20" font-family="Arial" dy=".3em">
+  <text x="50%" y="50%" text-anchor="middle" fill="#004d40" font-size="20" font-family="Arial" dy=".3em">
     Revenue Development and Planning
   </text>
 </svg>
