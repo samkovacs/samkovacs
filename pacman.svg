@@ -1,9 +1,9 @@
 <svg width="1000" height="200" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <!-- Pac-Man shape with mouth open -->
+    <!-- Pac-Man with mouth open -->
     <path id="pacman-open" d="M10,10 a10,10 0 1,0 0,-20 l-10,10 z" fill="yellow" />
 
-    <!-- Pac-Man shape with mouth closed -->
+    <!-- Pac-Man with mouth closed -->
     <circle id="pacman-closed" cx="0" cy="0" r="10" fill="yellow" />
 
     <!-- Define a dot -->
@@ -21,16 +21,16 @@
     <!-- Define the path along the border -->
     <path id="borderPath" d="M20,20 H980 V180 H20 Z" fill="none" stroke="none" />
 
-    <!-- Animate Pac-Man along the border with open/close mouth effect -->
-    <animateMotion id="pacman-open-animation" href="#pacman-open" dur="10s" repeatCount="indefinite">
+    <!-- Pac-Man animation along the border with mouth open/close -->
+    <animateMotion href="#pacman-open" dur="10s" repeatCount="indefinite">
       <mpath href="#borderPath" />
     </animateMotion>
-    <animateMotion id="pacman-closed-animation" href="#pacman-closed" dur="10s" repeatCount="indefinite" keyPoints="0;0.5;1" keyTimes="0;0.5;1">
+    <animateMotion href="#pacman-closed" dur="10s" repeatCount="indefinite" begin="0.5s">
       <mpath href="#borderPath" />
     </animateMotion>
 
-    <!-- Animate the ghost along the border with a delay -->
-    <animateMotion id="ghost-animation" href="#ghost" dur="10s" begin="2s" repeatCount="indefinite">
+    <!-- Ghost animation along the border -->
+    <animateMotion href="#ghost" dur="10s" begin="2s" repeatCount="indefinite">
       <mpath href="#borderPath" />
     </animateMotion>
   </defs>
@@ -39,10 +39,11 @@
   <rect x="10" y="10" width="980" height="180" fill="#073642" stroke="none" rx="15" ry="15" />
 
   <!-- Dots along the border -->
-  <use href="#dot" x="30" y="20" />
-  <use href="#dot" x="60" y="20" />
-  <use href="#dot" x="90" y="20" />
-  <!-- Repeat similar dot positions for the full border -->
+  <use href="#dot">
+    <animateMotion dur="10s" repeatCount="indefinite">
+      <mpath href="#borderPath" />
+    </animateMotion>
+  </use>
 
   <!-- Super-pellets at each corner -->
   <use href="#super-pellet" x="20" y="20" />
