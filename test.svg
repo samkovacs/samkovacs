@@ -12,9 +12,9 @@
   <!-- Rectangle with animated gradient border and solarized background -->
   <rect x="5" y="5" width="990" height="190" fill="#073642" stroke="url(#animatedGradient)" stroke-width="8" rx="15" ry="15" />
 
-  <!-- Scalable Text content -->
-  <text id="bannerText" x="50%" y="50%" text-anchor="middle" fill="#eee8d5" font-family="Verdana, Geneva, sans-serif" dy=".35em">
-    Revenue Development and Planning
+  <!-- Scalable Text content with dynamic fitting -->
+  <text x="50%" y="50%" text-anchor="middle" fill="#eee8d5" font-family="Verdana, Geneva, sans-serif" dy=".35em" textLength="950" lengthAdjust="spacingAndGlyphs">
+    Abandon Hope All Ye Who Enter Here!
   </text>
 
   <!-- Additional Feature: Glow effect around the text -->
@@ -26,43 +26,7 @@
     </feMerge>
   </filter>
 
-  <text id="bannerTextGlow" x="50%" y="50%" text-anchor="middle" fill="#eee8d5" font-family="Verdana, Geneva, sans-serif" dy=".35em" filter="url(#glow)">
+  <text x="50%" y="50%" text-anchor="middle" fill="#eee8d5" font-family="Verdana, Geneva, sans-serif" dy=".35em" textLength="950" lengthAdjust="spacingAndGlyphs" filter="url(#glow)">
     Abandon Hope All Ye Who Enter Here!
   </text>
-
-  <!-- JavaScript for Optimized Dynamic Text Scaling -->
-  <script type="application/ecmascript">
-    <![CDATA[
-      const fitTextToWidth = (elementId, maxWidth) => {
-        const textElement = document.getElementById(elementId);
-        let fontSize = 100; // Start with a large font size
-        textElement.setAttribute('font-size', fontSize);
-
-        // Reduce font size if it overflows
-        while (textElement.getBBox().width > maxWidth && fontSize > 5) {
-          fontSize -= 1;
-          textElement.setAttribute('font-size', fontSize);
-        }
-
-        // Increase font size to fill space optimally
-        while (textElement.getBBox().width < maxWidth && fontSize < 200) {
-          fontSize += 1;
-          textElement.setAttribute('font-size', fontSize);
-          if (textElement.getBBox().width > maxWidth) {
-            fontSize -= 1;  // Ensure it doesn't overflow
-            textElement.setAttribute('font-size', fontSize);
-            break;
-          }
-        }
-      };
-
-      const adjustTextSize = () => {
-        fitTextToWidth('bannerText', 900);
-        fitTextToWidth('bannerTextGlow', 900);
-      };
-
-      adjustTextSize();
-      window.addEventListener('resize', adjustTextSize);
-    ]]>
-  </script>
 </svg>
