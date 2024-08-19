@@ -14,7 +14,7 @@
 
   <!-- Scalable Text content with dynamic fitting -->
   <text x="50%" y="50%" text-anchor="middle" fill="#eee8d5" font-family="Verdana, Geneva, sans-serif" dy=".35em" textLength="950" lengthAdjust="spacingAndGlyphs">
-    Abandon Hope All Ye Who Enter Here!
+    Sam Kovacs
   </text>
 
   <!-- Additional Feature: Glow effect around the text -->
@@ -27,6 +27,6 @@
   </filter>
 
   <text x="50%" y="50%" text-anchor="middle" fill="#eee8d5" font-family="Verdana, Geneva, sans-serif" dy=".35em" textLength="950" lengthAdjust="spacingAndGlyphs" filter="url(#glow)">
-    Abandon Hope All Ye Who Enter Here!
+    Sam Kovacs
   </text>
 </svg>
