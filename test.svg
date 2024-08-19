@@ -12,9 +12,9 @@
   <!-- Rectangle with animated gradient border and solarized background -->
   <rect x="5" y="5" width="990" height="190" fill="#073642" stroke="url(#animatedGradient)" stroke-width="8" rx="15" ry="15" />
 
-  <!-- Scalable Text content with dynamic fitting -->
-  <text x="50%" y="50%" text-anchor="middle" fill="#eee8d5" font-size="48" font-family="Verdana, Geneva, sans-serif" dy=".35em" textLength="900" lengthAdjust="spacingAndGlyphs">
-    Abandon Hope All Ye Who Enter Here!
+  <!-- Scalable Text content -->
+  <text id="bannerText" x="50%" y="50%" text-anchor="middle" fill="#eee8d5" font-family="Verdana, Geneva, sans-serif" dy=".35em">
+    Revenue Development and Planning
   </text>
 
   <!-- Additional Feature: Glow effect around the text -->
@@ -26,7 +26,31 @@
     </feMerge>
   </filter>
 
-  <text x="50%" y="50%" text-anchor="middle" fill="#eee8d5" font-size="48" font-family="Verdana, Geneva, sans-serif" dy=".35em" textLength="900" lengthAdjust="spacingAndGlyphs" filter="url(#glow)">
+  <text id="bannerTextGlow" x="50%" y="50%" text-anchor="middle" fill="#eee8d5" font-family="Verdana, Geneva, sans-serif" dy=".35em" filter="url(#glow)">
     Revenue Development and Planning
   </text>
+
+  <!-- JavaScript for Dynamic Text Scaling -->
+  <script type="application/ecmascript">
+    <![CDATA[
+      const fitTextToWidth = (elementId, maxWidth) => {
+        const textElement = document.getElementById(elementId);
+        let fontSize = 48; // Start with a base font size
+        textElement.setAttribute('font-size', fontSize);
+
+        while (textElement.getBBox().width > maxWidth && fontSize > 5) {
+          fontSize -= 1;
+          textElement.setAttribute('font-size', fontSize);
+        }
+      };
+
+      const adjustTextSize = () => {
+        fitTextToWidth('bannerText', 900);
+        fitTextToWidth('bannerTextGlow', 900);
+      };
+
+      adjustTextSize();
+      window.addEventListener('resize', adjustTextSize);
+    ]]>
+  </script>
 </svg>
