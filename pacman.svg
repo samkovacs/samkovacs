@@ -43,4 +43,12 @@
   </use>
 
   <!-- Text content -->
-  <text x="50%" y="
+  <text x="50%" y="50%" text-anchor="middle" fill="#eee8d5" font-family="Verdana, Geneva, sans-serif" font-size="10em" dy=".35em" textLength="950" lengthAdjust="spacingAndGlyphs">
+    Sam Kovacs
+  </text>
+
+  <!-- Glow effect -->
+  <text x="50%" y="50%" text-anchor="middle" fill="#eee8d5" font-family="Verdana, Geneva, sans-serif" font-size="10em" dy=".35em" textLength="950" lengthAdjust="spacingAndGlyphs" filter="url(#glow)">
+    Sam Kovacs
+  </text>
+</svg>
